@@ -1,2 +1,4 @@
-# PPPuC03-Scala
-Reference source codes for PPPuC03 - Scala version
+# 国科大2014级计算机C语言03 - 习题参考 - Scala版 #
+
+本是C语言课的习题，自己在学Scala，对应写个Scala版的。
+
