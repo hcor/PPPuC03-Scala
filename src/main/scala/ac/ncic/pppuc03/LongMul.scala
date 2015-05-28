@@ -6,7 +6,7 @@ object LongMul {    // can't handle negative integers yet.
     val paddedX = "0" * (padSize - x.length) + x
     val paddedY = "0" * (padSize - y.length) + y
     val (sum, carry) = (paddedX zip paddedY).foldRight(("", 0)) {    // "fold"? means "REDUCE"???
-      case ((dx, dy), (acc, carry)) =>    // `case` advises the compiler to use pattern matching.
+      case ((dx, dy), (acc, carry)) =>    // `case` advises the compiler to pattern match on tuples.
         val sum = dx.asDigit + dy.asDigit + carry
         ((sum % 10).toString + acc, sum / 10)
     }
