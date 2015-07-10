@@ -1,3 +1,6 @@
-.idea/
-target/
+.idea
+.idea_modules
+project/*
+!project/plugins.sbt
+target
 *swp
