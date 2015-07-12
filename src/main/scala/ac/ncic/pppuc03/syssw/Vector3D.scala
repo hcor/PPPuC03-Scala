@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 case class Vector3D(x: Double, y: Double, z: Double) {
   def dot(v: Vector3D): Double = x*v.x + y*v.y + z*v.z;

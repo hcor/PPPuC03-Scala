@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 class Nth(num: Int) {    // i'm a newbie so give `class` a try :)
   def withSuffix = 

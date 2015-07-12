@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 object LongMul {    // can't handle negative integers yet.
   def addNums(x: String, y: String) = {    // do addition as if by hand.

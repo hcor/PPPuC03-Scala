@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 object Palindrome {
   def isPalindrome(s: String): Boolean =

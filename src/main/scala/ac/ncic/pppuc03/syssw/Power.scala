@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 object Power {
   def power(base: Int, exp: Int): BigInt = {    // basic normal recursion, and mind that recursive method needs result type.

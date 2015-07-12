@@ -1,4 +1,4 @@
-package ac.ncic.pppuc03
+package ac.ncic.pppuc03.syssw
 
 object Dec2Oct {
   def dec2oct(num: Int) = {
