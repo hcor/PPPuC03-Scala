@@ -4,13 +4,15 @@ object Palindrome {
   def isPalindrome(s: String): Boolean =
     (s.size >= 2) && {
       val p = s.replaceAll("[^\\p{L}]", "").toLowerCase;
-
       //p == p.reverse
 
-      val len = p.length
-      for (i <- 0 until len/2)
-        if (p.charAt(i) != p.charAt(len-i-1)) return false
-      return true
+      @scala.annotation.tailrec
+      def palindrome(s: String, begin: Int, end: Int): Boolean =
+        if (begin >= end-1) true
+        else if (s.charAt(begin) != s.charAt(end)) false
+        else palindrome(s, begin+1, end-1)
+
+      palindrome(p, 0, p.length-1)
     }
 }
 
