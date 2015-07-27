@@ -3,7 +3,7 @@ package ac.ncic.syssw.pppuc03
 object Palindrome {
   def isPalindrome(s: String): Boolean =
     (s.size >= 2) && {
-      val p = s.replaceAll("[^\\p{L}]", "").toLowerCase;
+      val p = s.replaceAll("[^\\p{L}]", "").toLowerCase
       //p == p.reverse
 
       @scala.annotation.tailrec
